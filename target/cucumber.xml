@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="32.947">
+    <testcase classname="Feature to test login functionality" name="Check login is successful with valid credentials" time="7.527">
+        <system-out><![CDATA[Given user open the browser.................................................passed
+And user launch the google webpage..........................................passed
+And user write amazon in search box.........................................passed
+When user click on amazon link..............................................passed
+And amazon page verification................................................passed
+And click signin button.....................................................passed
+And user enter email and password...........................................passed
+And user click on submit button.............................................passed
+Then user page verification.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="New Releases page navigation and get products" name="Navigate to New Releases page and get new product with price" time="1.451">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user can see new releases quick link....................................passed
+When user click on new releases link........................................passed
+And verify user on new release page.........................................passed
+Then print new launch products with price...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test an Item search functionality" name="check whether we are getting results according to the Search data" time="1.838">
+        <system-out><![CDATA[Given user should launch the application....................................passed
+When User enters an item to search and clicks Enter.........................passed
+Then user Should get Items according to the Search Data.....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test an Item search functionality" name="check whether we are getting results sorted acoording to the color,size,Brandname" time="7.393">
+        <system-out><![CDATA[Given user should launch the application....................................passed
+And User enters an item to search and clicks Enter..........................passed
+And user Should get Items according to the Search Data......................passed
+When user selects the BrandName and Size and Color..........................passed
+Then user Should get Items Sorted according to the selection................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Feature to test itemAddedToCart Functionality" name="Check item is added to cart and proceed to checkout" time="6.078">
+        <system-out><![CDATA[Given select item to add....................................................passed
+And select quatity to add...................................................passed
+And click add to cart button................................................passed
+When item added to cart.....................................................passed
+Then user can proceed to checkout...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Best Seller page navigation and get products" name="Navigate to best seller page and get top product with price" time="1.953">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And user can see best sellers quick link....................................passed
+When user click on best seller link.........................................passed
+And verify user on right page...............................................passed
+Then print top products with price..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check to all footer links" name="Checking all links are present in footer section or not" time="1.329">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+When footer links are present...............................................passed
+Then print all links present in footer......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Browser History feature functionality" name="Click on first product of best seller page and find in browser history" time="5.184">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+And click on best seller link...............................................passed
+And click on first product..................................................passed
+And click on amazon logo....................................................passed
+When check for browser history link or tab..................................passed
+And click on browser history tab............................................passed
+Then verify recently viewed product is present or not.......................passed
+And quit browser............................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
