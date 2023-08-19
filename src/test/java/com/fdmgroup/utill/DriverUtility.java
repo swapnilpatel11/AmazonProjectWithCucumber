@@ -37,7 +37,7 @@ public class DriverUtility {
 		switch(driverName) {
 		
 		case "google chrome":
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 			this.driver= new ChromeDriver();
 			break;
 		}

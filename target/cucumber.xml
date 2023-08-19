@@ -1,7 +1,47 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="32.947">
-    <testcase classname="Feature to test login functionality" name="Check login is successful with valid credentials" time="7.527">
-        <system-out><![CDATA[Given user open the browser.................................................passed
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="92.25" tests="8" skipped="0" failures="4" errors="0">
+<testcase classname="Feature to test login functionality" name="Check login is successful with valid credentials" time="27.61">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(@id,'nav-link-accountList-nav-line-1')]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//*[contains(@id,'nav-link-accountList-nav-line-1')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@id,'nav-link-accountList-nav-line-1')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//*[contains(@id,'nav-link-accountList-nav-line-1')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.fdmgroup.pages.SigninVarification.getuser(SigninVarification.java:11)
+	at com.fdmgroup.testScript.loginStepTest.user_page_verification(loginStepTest.java:77)
+	at ✽.user page verification(file:///C:/Users/Swapn/eclipse-workspace/AmazonProjectWithCucumber/src/test/resources/Features/F1_login.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user open the browser.................................................passed
 And user launch the google webpage..........................................passed
 And user write amazon in search box.........................................passed
 When user click on amazon link..............................................passed
@@ -9,62 +49,186 @@ And amazon page verification................................................pass
 And click signin button.....................................................passed
 And user enter email and password...........................................passed
 And user click on submit button.............................................passed
-Then user page verification.................................................passed
+Then user page verification.................................................failed
 ]]></system-out>
-    </testcase>
-    <testcase classname="New Releases page navigation and get products" name="Navigate to New Releases page and get new product with price" time="1.451">
-        <system-out><![CDATA[Given user is on home page..................................................passed
+</testcase>
+<testcase classname="New Releases page navigation and get products" name="Navigate to New Releases page and get new product with price" time="6.464">
+<system-out><![CDATA[
+Given user is on home page..................................................passed
 And user can see new releases quick link....................................passed
 When user click on new releases link........................................passed
 And verify user on new release page.........................................passed
 Then print new launch products with price...................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="feature to test an Item search functionality" name="check whether we are getting results according to the Search data" time="1.838">
-        <system-out><![CDATA[Given user should launch the application....................................passed
+</testcase>
+<testcase classname="feature to test an Item search functionality" name="check whether we are getting results according to the Search data" time="9.905">
+<system-out><![CDATA[
+Given user should launch the application....................................passed
 When User enters an item to search and clicks Enter.........................passed
 Then user Should get Items according to the Search Data.....................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="feature to test an Item search functionality" name="check whether we are getting results sorted acoording to the color,size,Brandname" time="7.393">
-        <system-out><![CDATA[Given user should launch the application....................................passed
+</testcase>
+<testcase classname="feature to test an Item search functionality" name="check whether we are getting results sorted acoording to the color,size,Brandname" time="14.293">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='brandsRefinements']/ul/li[@aria-label='Amazon Essentials']//input&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//div[@id='brandsRefinements']/ul/li[@aria-label='Amazon Essentials']//input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='brandsRefinements']/ul/li[@aria-label='Amazon Essentials']//input"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//div[@id='brandsRefinements']/ul/li[@aria-label='Amazon Essentials']//input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.fdmgroup.pages.SearchPage.chooseBrandFromTheBrandRefinements(SearchPage.java:32)
+	at com.fdmgroup.testScript.searchStepTest.user_selects_the_brand_name_and_size_and_color(searchStepTest.java:48)
+	at ✽.user selects the BrandName and Size and Color(file:///C:/Users/Swapn/eclipse-workspace/AmazonProjectWithCucumber/src/test/resources/Features/F3_search.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user should launch the application....................................passed
 And User enters an item to search and clicks Enter..........................passed
 And user Should get Items according to the Search Data......................passed
-When user selects the BrandName and Size and Color..........................passed
-Then user Should get Items Sorted according to the selection................passed
+When user selects the BrandName and Size and Color..........................failed
+Then user Should get Items Sorted according to the selection................skipped
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test itemAddedToCart Functionality" name="Check item is added to cart and proceed to checkout" time="6.078">
-        <system-out><![CDATA[Given select item to add....................................................passed
-And select quatity to add...................................................passed
-And click add to cart button................................................passed
-When item added to cart.....................................................passed
-Then user can proceed to checkout...........................................passed
+</testcase>
+<testcase classname="Feature to test itemAddedToCart Functionality" name="Check item is added to cart and proceed to checkout" time="10.054">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;search&quot;]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div[1]/div/span/a/div/img[1]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//*[@id=&quot;search&quot;]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div[1]/div/span/a/div/img[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div[1]/div/span/a/div/img[1]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[2]/div/div/div/div/div[1]/div/span/a/div/img[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.fdmgroup.pages.AddItemPage.selectCartItem(AddItemPage.java:9)
+	at com.fdmgroup.testScript.AddItemStepTest.select_item_to_add(AddItemStepTest.java:21)
+	at ✽.select item to add(file:///C:/Users/Swapn/eclipse-workspace/AmazonProjectWithCucumber/src/test/resources/Features/F4_addingItem.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given select item to add....................................................failed
+And select quatity to add...................................................skipped
+And click add to cart button................................................skipped
+When item added to cart.....................................................skipped
+Then user can proceed to checkout...........................................skipped
 ]]></system-out>
-    </testcase>
-    <testcase classname="Best Seller page navigation and get products" name="Navigate to best seller page and get top product with price" time="1.953">
-        <system-out><![CDATA[Given user is on home page..................................................passed
+</testcase>
+<testcase classname="Best Seller page navigation and get products" name="Navigate to best seller page and get top product with price" time="5.871">
+<system-out><![CDATA[
+Given user is on home page..................................................passed
 And user can see best sellers quick link....................................passed
 When user click on best seller link.........................................passed
 And verify user on right page...............................................passed
 Then print top products with price..........................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Check to all footer links" name="Checking all links are present in footer section or not" time="1.329">
-        <system-out><![CDATA[Given user is on home page..................................................passed
+</testcase>
+<testcase classname="Check to all footer links" name="Checking all links are present in footer section or not" time="3.758">
+<system-out><![CDATA[
+Given user is on home page..................................................passed
 When footer links are present...............................................passed
 Then print all links present in footer......................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Browser History feature functionality" name="Click on first product of best seller page and find in browser history" time="5.184">
-        <system-out><![CDATA[Given user is on home page..................................................passed
+</testcase>
+<testcase classname="Browser History feature functionality" name="Click on first product of best seller page and find in browser history" time="13.832">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[normalize-space()='Disposable Face Masks 3 Ply Masks with Adjustable Nose Strip Comfortable Cotton 3-Ply Masks for Every Day Use']&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//div[normalize-space()='Disposable Face Masks 3 Ply Masks with Adjustable Nose Strip Comfortable Cotton 3-Ply Masks for Every Day Use']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Disposable Face Masks 3 Ply Masks with Adjustable Nose Strip Comfortable Cotton 3-Ply Masks for Every Day Use']"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5359a7e437fb58bd6a5082da07624efe, findElement {using=xpath, value=//div[normalize-space()='Disposable Face Masks 3 Ply Masks with Adjustable Nose Strip Comfortable Cotton 3-Ply Masks for Every Day Use']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Swapn\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5359a7e437fb58bd6a5082da07624efe
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.fdmgroup.pages.BestSellerPage.productMask(BestSellerPage.java:20)
+	at com.fdmgroup.testScript.BrowserHistoryStepTest.click_on_first_product(BrowserHistoryStepTest.java:29)
+	at ✽.click on first product(file:///C:/Users/Swapn/eclipse-workspace/AmazonProjectWithCucumber/src/test/resources/Features/F8_browserHistory.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on home page..................................................passed
 And click on best seller link...............................................passed
-And click on first product..................................................passed
-And click on amazon logo....................................................passed
-When check for browser history link or tab..................................passed
-And click on browser history tab............................................passed
-Then verify recently viewed product is present or not.......................passed
-And quit browser............................................................passed
+And click on first product..................................................failed
+And click on amazon logo....................................................skipped
+When check for browser history link or tab..................................skipped
+And click on browser history tab............................................skipped
+Then verify recently viewed product is present or not.......................skipped
+And quit browser............................................................skipped
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>
